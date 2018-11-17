@@ -1,0 +1,63 @@
+.accordion {
+    border: 1px solid black;
+    color: #14453D;
+}
+.accordion, .accordion ul {
+    list-style: none;
+    padding-left: 0;
+}
+.accordion ul {
+    height: 0;
+    overflow: hidden;
+}
+.accordion ul li {
+    background-color: #D5EAE7;
+}
+.accordion li a:not(:last-child):after {
+    content: "\f103";
+    float: right;
+    line-height: 1.4;
+    font-size: 1.8rem;
+    font-family: FontAwesome;
+}
+.accordion li a:not(:last-child).accordion-open:after {
+    content: "\f100"
+}
+.accordion li a:not(:last-child):before {
+    content: "\f07b";
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    font-family: FontAwesome;
+ }
+.accordion li a:not(:last-child).accordion-open:before {
+    content: "\f07c";
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    font-family: FontAwesome;
+}
+.accordion a[href*="#"]:before, .accordion a[href*="http"]:before {
+    content: "\f08e";
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    font-family: FontAwesome;
+}
+.accordion li a {
+    display: block;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 1rem;
+    text-indent: 1.5rem;
+    text-decoration: none;
+}
+.accordion li li a {
+    text-indent: 3rem;
+}
+.accordion li li li a {
+    text-indent: 6rem;
+}
+.accordion li li li li a {
+    text-indent: 9rem;
+}
+.accordion li li li li li a {
+    text-indent: 12rem;
+}
