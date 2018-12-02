@@ -21,7 +21,7 @@
     font-family: FontAwesome;
 }
 .accordion li a:not(:last-child).accordion-open:after {
-    content: "\f100"
+    content: "\f100";
 }
 .accordion li a:not(:last-child):before {
     content: "\f07b";
